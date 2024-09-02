@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDOELEMENTOS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: blue;
+        }
+
+        a:hover{
+            text-decoration: underline black;
+        }
+
+        a:visited{
+            color: red;
+        }
+
+        a:active {
+            color: aqua;
+        }
+
+        a::after{
+            content: ' [link]';
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando link</h1>
+    <ul>
+        <li><a href="https://youtube.com">youtube</a></li>
+        <li><a href="https://google.com">google</a></li>
+        <li><a href="https://facebook.com">facebook</a></li>
+    </ul>
+</body>
+</html>
