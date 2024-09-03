@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização Vertical de Caixas</title>
+
+    <style>
+
+        section{
+            width: 100%;
+            height: 98vh;
+            background-color: black;
+
+            /*Centralizar verticalmente*/
+            position: relative;
+        }
+
+        div {
+            background-color: grey;
+            width: 200px;
+            height: 200px;
+
+            /*Centralizar verticalmente*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+                /*Com isso eles centralizam em relação ao ponto left top*/
+            
+            /*Pra corrigir*/
+            transform: translate(-50%, -50%);
+
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+
+        <div>
+
+
+
+        </div>
+
+
+    </section>
+</body>
+</html>
