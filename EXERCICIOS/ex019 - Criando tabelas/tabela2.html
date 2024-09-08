@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        table{
+            border: 1px solid black;
+            width: 500px;
+            border-collapse: collapse;
+        }
+        
+        thead {
+            background-color: gray;
+            color: white;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        tr {
+            border: 1px solid black;
+
+        }
+
+        td, th{
+            border: 1p solid black;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: greenyellow;
+        }
+
+        tfoot{
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+     <!--
+    Anatomia de tabelas grandes
+    table
+        thead
+             tr, td, th
+        tbody
+             tr, td, th
+        tfoot     
+             tr, td, th
+    -->
+
+    <table>
+
+        <caption>População bbrasileira</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th> <!--Isso indica que os dados estao na coluna-->
+                <th scope="col">População</th>
+            </tr>    
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919,049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168,791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.894,13</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919,049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168,791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.894,13</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919,049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168,791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.894,13</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919,049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168,791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.894,13</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919,049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168,791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.894,13</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919,049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168,791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.894,13</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919,049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168,791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.894,13</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919,049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168,791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.894,13</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919,049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168,791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.894,13</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919,049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168,791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.894,13</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919,049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168,791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.894,13</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <th scope="row">Total de Habitantes</th> <!--Isso indica que os dados estão na linha-->
+            <td>Soma manual</td>
+        </tfoot>
+
+    </table>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laborum voluptatum est, neque quidem libero aperiam cumque commodi quos expedita modi consectetur? Exercitationem, dolorum at assumenda neque dolores vel maxime?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quaerat qui recusandae autem iure eum voluptatibus sequi non cum, cumque asperiores earum. Rerum saepe alias molestias quis corporis asperiores Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ab ad? Placeat enim qui, accusantium, eligendi debitis minima exercitationem, laboriosam minus fuga delectus veniam. Quasi tempore eius expedita similique unde.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laborum voluptatum est, neque quidem libero aperiam cumque commodi quos expedita modi consectetur? Exercitationem, dolorum at assumenda neque dolores vel maxime?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quaerat qui recusandae autem iure eum voluptatibus sequi non cum, cumque asperiores earum. Rerum saepe alias molestias quis corporis asperiores Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ab ad? Placeat enim qui, accusantium, eligendi debitis minima exercitationem, laboriosam minus fuga delectus veniam. Quasi tempore eius expedita similique unde.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laborum voluptatum est, neque quidem libero aperiam cumque commodi quos expedita modi consectetur? Exercitationem, dolorum at assumenda neque dolores vel maxime?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quaerat qui recusandae autem iure eum voluptatibus sequi non cum, cumque asperiores earum. Rerum saepe alias molestias quis corporis asperiores Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ab ad? Placeat enim qui, accusantium, eligendi debitis minima exercitationem, laboriosam minus fuga delectus veniam. Quasi tempore eius expedita similique unde.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laborum voluptatum est, neque quidem libero aperiam cumque commodi quos expedita modi consectetur? Exercitationem, dolorum at assumenda neque dolores vel maxime?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quaerat qui recusandae autem iure eum voluptatibus sequi non cum, cumque asperiores earum. Rerum saepe alias molestias quis corporis asperiores Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ab ad? Placeat enim qui, accusantium, eligendi debitis minima exercitationem, laboriosam minus fuga delectus veniam. Quasi tempore eius expedita similique unde.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laborum voluptatum est, neque quidem libero aperiam cumque commodi quos expedita modi consectetur? Exercitationem, dolorum at assumenda neque dolores vel maxime?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quaerat qui recusandae autem iure eum voluptatibus sequi non cum, cumque asperiores earum. Rerum saepe alias molestias quis corporis asperiores Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ab ad? Placeat enim qui, accusantium, eligendi debitis minima exercitationem, laboriosam minus fuga delectus veniam. Quasi tempore eius expedita similique unde.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laborum voluptatum est, neque quidem libero aperiam cumque commodi quos expedita modi consectetur? Exercitationem, dolorum at assumenda neque dolores vel maxime?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quaerat qui recusandae autem iure eum voluptatibus sequi non cum, cumque asperiores earum. Rerum saepe alias molestias quis corporis asperiores Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ab ad? Placeat enim qui, accusantium, eligendi debitis minima exercitationem, laboriosam minus fuga delectus veniam. Quasi tempore eius expedita similique unde.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laborum voluptatum est, neque quidem libero aperiam cumque commodi quos expedita modi consectetur? Exercitationem, dolorum at assumenda neque dolores vel maxime?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quaerat qui recusandae autem iure eum voluptatibus sequi non cum, cumque asperiores earum. Rerum saepe alias molestias quis corporis asperiores Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ab ad? Placeat enim qui, accusantium, eligendi debitis minima exercitationem, laboriosam minus fuga delectus veniam. Quasi tempore eius expedita similique unde.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laborum voluptatum est, neque quidem libero aperiam cumque commodi quos expedita modi consectetur? Exercitationem, dolorum at assumenda neque dolores vel maxime?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quaerat qui recusandae autem iure eum voluptatibus sequi non cum, cumque asperiores earum. Rerum saepe alias molestias quis corporis asperiores Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ab ad? Placeat enim qui, accusantium, eligendi debitis minima exercitationem, laboriosam minus fuga delectus veniam. Quasi tempore eius expedita similique unde.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laborum voluptatum est, neque quidem libero aperiam cumque commodi quos expedita modi consectetur? Exercitationem, dolorum at assumenda neque dolores vel maxime?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quaerat qui recusandae autem iure eum voluptatibus sequi non cum, cumque asperiores earum. Rerum saepe alias molestias quis corporis asperiores Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ab ad? Placeat enim qui, accusantium, eligendi debitis minima exercitationem, laboriosam minus fuga delectus veniam. Quasi tempore eius expedita similique unde.</p>
+    
+</body>
+</html>
