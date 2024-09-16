@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>        
+</head>
+<body>
+    <h1>Formulário</h1>
+    
+    <form action="cadastro.php" method="post" autocomplete="on"> <!--Isso desliga o autocompletar de texto-->
+        <p>
+            <label for="iusu">Usuário:</label> <input type="text" name="usu" id="iusu" required minlength="8" maxlength="20" placeholder="Nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="imedia">Média:</label> <input type="number" name="media" id="imedia" required min="0" max="10" step="0.1" value="5"> 
+        </p>
+        <!--value = Valor padrão que aparece-->
+        <p>
+            <label for="imes">Periodo Letivo</label>
+            <input type="month" name="mes" id="imes">
+            <!--Isso tudo dar pra fazer com dia/mes/ano (date)
+            com time (hora)  -->>
+        </p>
+
+        <p><input type="submit" value="Enviar">
+            <input type="reset" value="Limpar"></p>
+    </form>
+
+    <!--GET é o padrão e post não aparece na URL-->
+    <!--GET pode ser usado quando se pode enviar a URL e quando não tem dados sensíveis e se tiverem menos de 3 mil letras/bytes-->
+
+
+</body>
+</html>

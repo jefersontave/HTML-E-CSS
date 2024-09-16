@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        div.conteiner {
+            background-color: green;
+            display: flex; /*só o conteiner pai carrega essa configuração*/
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+
+        }
+
+        div.item {
+            background-color: rgb(0, 92, 0);
+            color: white;
+            text-align: center;
+        }
+
+        /*
+            Mais fácil 
+                flex-flow: row nowrap
+        */
+
+        /*
+            justify-content alinha de acordo com o eixo principal
+            justify-content: flex-start; gruda no main-start
+            justify-content: flex-end; gruda no main-end
+            justify-content: center; centraliza em direção ao eixo principal
+            justify-content: space-between; gruda os itens no main start e end e distribue o espaço entre os itens
+            justify-content: space-evenly; mesmo entre todos os itens
+            justify-content: space-around; divide o conteiner em partes iguais e centraliza os itens um em cada espaço
+        */
+
+        /*
+            align-items alinha no sentido tranversal
+            align-items:stretch; estica
+            align-items:flex-start; gruda no cross-start
+            align-items:flex-end; gruda no cross-end
+            align-items:center; centraliza
+        */
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+</body>
+</html>
